@@ -250,15 +250,15 @@
 @media (min-width:768px) {
   .hero .hero__image {
     position: relative;
-    top: -40vh;
+    top: -36vh;
     right: -45vw;
   }
 }
 @media (min-width:992px) {
   .hero .hero__image {
     position: relative;
-    top: -20vh;
-    right: -40vw;
+    top: -40vh;
+    right: -11vw;
   }
 }
 
