@@ -1,0 +1,58 @@
+@use './variables';
+
+@mixin button($height, $width) {
+    height:$height;
+    width:$width;
+    text-decoration:none;
+    color:white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+
+@mixin Button1ldle($height, $width) {
+    @include button($height, $width);
+    background-color:$Yankees-Blue ;
+}
+
+@mixin Button1Hover($height, $width) {
+    @include button($height, $width);
+    &:hover {
+        background-color: $Dark-Blue-Gray;
+    }
+    
+}
+
+@mixin Button2ldle($height, $width) {
+    @include button($height, $width);
+    background: linear-gradient(to bottom, $Outrageous-Orange, $Frostbite);
+}
+
+@mixin Button2Hover($height, $width){
+    @include button($height, $width);
+    background: linear-gradient(to bottom, $Outrageous-Orange, $Frostbite);
+    &:hover {
+        opacity:0.6;
+    }
+}
+
+@mixin Button3ldle($height, $width) {
+    @include button($height, $width);
+    background: linear-gradient(to bottom, $Ultramarine-Blue, $Frostbite);
+}
+
+@mixin Button3Hover($height, $width) {
+    @include button($height, $width);
+    background: linear-gradient(to bottom, $Ultramarine-Blue, $Frostbite);
+    &:hover {
+        opacity:0.6;
+    }
+}
+
+
+

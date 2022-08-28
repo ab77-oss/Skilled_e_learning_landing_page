@@ -1,0 +1,44 @@
+.page-footer {
+    background-color: $Yankees-Blue;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:25px;
+    padding:36px;
+    header {
+        color:$White;
+        @media #{$maxMobile} {
+            @include HeadingS;
+
+         }
+        @media #{$minSmall} {
+            @include HeadingM;
+   
+        }
+        @media #{$minMedium} {
+            @include HeadingL;
+   
+        }
+    }
+    .button {
+        @media #{$maxMobile} {
+            @include BodyS;
+            @include Button3ldle(48px, 148px);
+            @include Button3Hover(48px, 148px);
+
+        }
+        @media #{$minSmall} {
+            @include BodyS;
+            @include Button3ldle(48px, 148px);
+            @include Button3Hover(48px, 148px);
+
+        }
+        @media #{$minMedium} {
+            @include BodyM;
+            @include Button3ldle(56px, 167px);
+            @include Button3Hover(56px, 167px);
+
+        }
+    }
+}

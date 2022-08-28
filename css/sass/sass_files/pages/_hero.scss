@@ -1,0 +1,92 @@
+.hero {
+    
+    margin-left:5vw;
+    margin-right:5vw;
+    @media #{$minSmall} {
+        height:600px;
+    }
+    
+
+    @media #{$minMedium} {
+        display:flex;
+        align-items: flex-between;
+        height:800px;
+
+    }
+
+       .hero__inner {
+        
+        div {
+            @include HeadingL;
+            width:100%;
+            }
+        p {
+            @include BodyM; 
+            }
+        .button {
+            @include BodyS;
+            @include Button2ldle(48px, 148px); 
+            @include Button2Hover(48px, 148px);
+            }
+        @media #{$minSmall} {
+            div {
+                @include HeadingL;
+                width:50%;
+                position:relative;
+                top:15vh;
+                left:0vw;
+                }
+            p {
+                width: 50%;
+                position:relative;
+                top:15vh;
+                left:0vw;
+            }
+            .button {
+                position:relative;
+                top:15vh;
+                left:0vw;
+            }
+            }
+            @media #{$minMedium} {
+                    align-items: flex-start;
+                    flex-basis: 0;
+                div {
+                    @include HeadingXL;
+                    width:200%;
+                    position:relative;
+                    top:30vh;
+                    left:0vw;
+                    }
+                p {
+                    
+                    position:relative;
+                    top:30vh;
+                    left:0vw;
+                    width: 200%;
+                    }
+                .button {
+                    position:relative;
+                    top:30vh;
+                    left:0vw;
+                }
+
+                }
+        }
+        .hero__image {
+
+            @media #{$minSmall} {
+                position:relative;
+                top:-34vh;
+                right:-45vw;
+
+            }
+
+            @media #{$minMedium} {
+                
+                position:relative;
+                top:-20vh;
+                right:-35vw;
+            }
+    }
+}

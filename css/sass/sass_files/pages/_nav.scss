@@ -1,0 +1,62 @@
+@import '../mixin';
+@import '../buttons';
+
+.nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    header {
+        
+        @media #{$maxMobile} {
+            @include HeadingS;
+            margin:5vw;
+
+         }
+        @media #{$minSmall} {
+            @include HeadingM;
+            position:absolute;
+            left:5vw;
+            top:1vw;
+            
+   
+        }
+        @media #{$minMedium} {
+            @include HeadingL;
+            position:absolute;
+            left:5vw;
+            top:1vw;
+            
+            
+   
+        }
+    }
+    .button {
+        @media #{$maxMobile} {
+            @include BodyS;
+            @include Button1ldle(48px, 148px);
+            @include Button1Hover(48px, 148px);
+            margin:5vw;
+           
+        }
+        @media #{$minSmall} {
+            @include BodyS;
+            @include Button1ldle(48px, 148px);
+            @include Button1Hover(48px, 148px);
+            position:absolute;
+            right:10vw;
+            top:1vw;
+            
+        }
+        @media #{$minMedium} {
+            @include BodyM;
+            @include Button1ldle(56px, 167px);
+            @include Button1Hover(56px, 167px);
+            position:absolute;
+            right:20vw;
+            top:1vw;
+
+        }
+        
+    }
+}
